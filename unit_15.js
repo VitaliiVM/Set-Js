@@ -91,14 +91,12 @@ document.querySelector('.b-6').onclick = f6;
 const f7 = () => {
      let val = document.querySelector('.i-7').value;
      let s7 = new Set(val);
-    for (let item of s7) {
         if (val.length === s7.size && val.length > 6) {
             document.querySelector('.out-7').innerHTML = 1;
         } else {
             document.querySelector('.out-7').innerHTML = 0;
             console.log("Wrong-pass!!!");
         }
-    }
          console.log(s7);
 }
 
