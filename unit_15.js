@@ -132,11 +132,14 @@ document.querySelector('.b-9').onclick = () => {
 }
 
 // Task 10
-// При нажатии b-10 выполняете функцию f10.
-// Функция должна принимать набор set в качестве параметра и выводить его в указанный элемент.
-// Элемент указывается как второй параметр функции f10. Вывод значений - через пробел.
 
-const f10 = (out_set, elem) => { }
+const f10 = (out_set, elem) => {
+    let a = Array.from(out_set);
+    for (let items of out_set) {
+       elem = document.querySelector('.out-10').innerHTML = a.join(" ");
+    }
+    console.log(elem);
+}
 
 document.querySelector('.b-10').onclick = () => {
     let a10 = new Set(['4', '5', '6']);
